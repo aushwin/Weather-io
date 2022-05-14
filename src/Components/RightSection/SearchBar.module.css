@@ -1,0 +1,33 @@
+.wrapper {
+    /* background-color: green; */
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 3;
+}
+
+.wrapper input {
+    width: 80%;
+    background:transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #4c5c68;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    color: #dee2e6;
+}
+
+.wrapper button {
+    outline: none;
+    border: none;
+    background-color: #ff7b00;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}

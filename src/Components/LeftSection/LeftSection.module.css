@@ -1,0 +1,15 @@
+.wrapper {
+    margin: 10% auto;
+    padding: 0;
+    height: 70%;
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #edf6f9;
+    font-weight: bold;
+}

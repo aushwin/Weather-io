@@ -1,0 +1,38 @@
+.wrapper {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+    /* background-color: cadetblue; */
+    width: fit-content;
+}
+
+.temp {
+    color: #edf6f9;
+    font-size: 7rem;
+    font-weight: 400;
+    
+}
+
+.locationDate {
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+        
+}
+
+.location {
+    color: #edf6f9;
+    font-size: 2.5rem;
+}
+
+.date {
+    color: #edf6f9;
+
+}
+
+.climate {
+    height: 84;
+    color: #edf6f9;
+    text-align: center;
+}

@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios"
+import { useContext, useEffect } from "react"
+import { Layout, LeftSection, RightSection } from "./Components"
+import WeatherContext from "./context/WeatherContext"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () =>{
+  const {setWallpaper,wallpaperUrl} = useContext(WeatherContext)
+  useEffect(()=>{
+    async function fetchWallpaper () {
+      const response = await axios('https://api.unsplash.com/photos/random?client_id=Nt92irQguFfL-tysdqwywVAy7VfvMdUsTql7CcyVcuM&orientation=landscape&topics=climate'
+      ,{
+        headers:{
+          "Access-Control-Allow-Origin": "*"
+        }
+      }
+      )
+      console.log(response)
+      setWallpaper(response.data.urls.full)
+    }
+    fetchWallpaper()
+  },[])
+  return <Layout>
+    <LeftSection />
+    <RightSection />
+    </Layout>
 }
-
-export default App;
+export default App

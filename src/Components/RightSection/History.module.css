@@ -1,0 +1,41 @@
+.wrapper {
+    /* background-color: green; */
+    height: 30vh;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-right: 100px;
+    border-bottom: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
+.BAD {
+    color: #ef233c;
+}
+
+.items {
+    padding: 10px;
+}
+
+.items:hover {
+    background-color: #343a4077;
+    padding: 10px;
+}
